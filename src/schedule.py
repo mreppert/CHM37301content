@@ -102,7 +102,7 @@ class schedule:
                 
             if len(item.link)>0 and item.cformat=='lecture':
                 titletext = "<a href=\""+ item.link + "\"> <span style=\"color:" + titlecol + ";text-decoration:underline\">" + item.title + "</span></a>"
-            if len(item.link)>0 and item.cformat=='preview':
+            elif len(item.link)>0 and item.cformat=='preview':
                 titletext = "<a href=\""+ item.link + "\"> <span style=\"color:" + titlecol + "\">" + item.title + "</span></a>"
             else:
                 titletext = "<span style=\"color:" + titlecol + "\">" + item.title + "</span>"
