@@ -100,8 +100,10 @@ class schedule:
             else:
                 titletext = item.title
                 
-            if len(item.link)>0:
+            if len(item.link)>0 and item.cformat=='lecture':
                 titletext = "<a href=\""+ item.link + "\"> <span style=\"color:" + titlecol + ";text-decoration:underline\">" + item.title + "</span></a>"
+            if len(item.link)>0 and item.cformat=='preview':
+                titletext = "<a href=\""+ item.link + "\"> <span style=\"color:" + titlecol + "\">" + item.title + "</span></a>"
             else:
                 titletext = "<span style=\"color:" + titlecol + "\">" + item.title + "</span>"
                 #titletext = '[' + titletext + '](' + item.link + ')'
@@ -141,7 +143,7 @@ def build_schedule_f2021(srcdir):
     schd.add_content(content('lecture', 'Group A: Temp. Sensors and Computer Analysis', newtopic=True, link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
     schd.add_content(content('lecture', 'Group B: Temp. Sensors and Computer Analysis'))
     
-    schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 1', newtopic=True))
+    schd.add_content(content('preview', 'Group A: Electronic Spectroscopy Part 1', newtopic=True, link=srcdir+'UVVis/uvvis_main_a.ipynb'))
     schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 2', newtopic=False))
     schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 1'))
     schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 2'))
