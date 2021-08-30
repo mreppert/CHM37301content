@@ -141,7 +141,7 @@ def build_schedule_f2021(srcdir):
 #     schd.add_holiday('2021-12-18', 'Finals')
 
     schd.add_content(content('lecture', 'Group A: Temp. Sensors and Computer Analysis', newtopic=True, link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Temp. Sensors and Computer Analysis'))
+    schd.add_content(content('lecture', 'Group B: Temp. Sensors and Computer Analysis', link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
     
     schd.add_content(content('preview', 'Group A: Electronic Spectroscopy Part 1', newtopic=True, link=srcdir+'UVVis/uvvis_main_a.ipynb'))
     schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 2', newtopic=False))
