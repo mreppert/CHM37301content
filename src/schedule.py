@@ -145,11 +145,11 @@ def build_schedule_f2021(srcdir):
     
     schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 1', newtopic=True, link=srcdir+'UVVis/uvvis_main_a.ipynb'))
     schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 2', newtopic=False, link=srcdir+'UVVis/uvvis_main_b.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 1'))
-    schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 2'))
+    schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 1', link=srcdir+'UVVis/uvvis_main_a.ipynb'))
+    schd.add_content(content('preview', 'Group B: Electronic Spectroscopy Part 2', link=srcdir+'UVVis/uvvis_main_b.ipynb'))
     
-    schd.add_content(content('lecture', 'Group A: Gas Phase Kinetics Part 1', newtopic=True))
-    schd.add_content(content('lecture', 'Group A: Gas Phase Kinetics Part 2'))
+    schd.add_content(content('preview', 'Group A: Gas Phase Kinetics Part 1', newtopic=True, link=srcdir+'Kinetics/kinetics_main_a.ipynb'))
+    schd.add_content(content('preview', 'Group A: Gas Phase Kinetics Part 2', link=srcdir+'Kinetics/kinetics_main_b.ipynb'))
     schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1'))
     schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1'))
     
