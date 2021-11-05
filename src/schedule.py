@@ -150,10 +150,10 @@ def build_schedule_f2021(srcdir):
     
     schd.add_content(content('lecture', 'Group A: Gas Phase Kinetics Part 1', newtopic=True, link=srcdir+'Kinetics/kinetics_main_a.ipynb'))
     schd.add_content(content('lecture', 'Group A: Gas Phase Kinetics Part 2', link=srcdir+'Kinetics/kinetics_main_b.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1'))
-    schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1'))
+    schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1', link=srcdir+'Kinetics/kinetics_main_a.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1', link=srcdir+'Kinetics/kinetics_main_b.ipynb'))
     
-    schd.add_content(content('lecture', 'Group A: Joule Thomson Part 1', newtopic=True))
+    schd.add_content(content('lecture', 'Group A: Joule Thomson Part 1', newtopic=True, link=srcdir+'JouleThomson/joule_thomson_main_a.ipynb'))
     schd.add_content(content('lecture', 'Group A: Joule Thomson Part 2'))
     schd.add_content(content('lecture', 'Group B: Joule Thomson Part 1'))
     schd.add_content(content('lecture', 'Group B: Joule Thomson Part 2'))
