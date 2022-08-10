@@ -125,20 +125,11 @@ class content:
         self.isnew = newtopic
 
 
-def build_schedule_f2021(srcdir):
-    schd = schedule('M', '2021-08-23')
+def build_schedule(srcdir):
+    schd = schedule('M', '2022-08-22')
 
-#     schd.add_holiday('2021-09-06', 'Labor Day')
-    schd.add_holiday('2021-10-11', 'October Break (No labs)')
-    schd.add_holiday('2021-10-12', 'October Break (No labs)')
-    schd.add_holiday('2021-11-22', 'Thanksgiving (No labs)')
-    
-#     schd.add_holiday('2021-12-13', 'Finals')
-#     schd.add_holiday('2021-12-14', 'Finals')
-#     schd.add_holiday('2021-12-15', 'Finals')
-#     schd.add_holiday('2021-12-16', 'Finals')
-#     schd.add_holiday('2021-12-17', 'Finals')
-#     schd.add_holiday('2021-12-18', 'Finals')
+    schd.add_holiday('2022-10-10', 'October Break (No labs)')
+    schd.add_holiday('2022-11-21', 'Thanksgiving (No labs)')
 
     schd.add_content(content('lecture', 'Group A: Temp. Sensors and Computer Analysis', newtopic=True, link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
     schd.add_content(content('lecture', 'Group B: Temp. Sensors and Computer Analysis', link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
@@ -155,8 +146,8 @@ def build_schedule_f2021(srcdir):
     
     schd.add_content(content('lecture', 'Group A: Joule Thomson Part 1', newtopic=True, link=srcdir+'JouleThomson/joule_thomson_main_a.ipynb'))
     schd.add_content(content('lecture', 'Group A: Joule Thomson Part 2', link=srcdir+'JouleThomson/joule_thomson_main_b.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Joule Thomson Part 1'))
-    schd.add_content(content('lecture', 'Group B: Joule Thomson Part 2'))
+    schd.add_content(content('lecture', 'Group B: Joule Thomson Part 1', link=srcdir+'JouleThomson/joule_thomson_main_a.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Joule Thomson Part 2', link=srcdir+'JouleThomson/joule_thomson_main_b.ipynb'))
     
 #     schd.add_content(content('lecture', 'Freedom!'))
     return schd
