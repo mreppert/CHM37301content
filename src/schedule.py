@@ -126,13 +126,10 @@ class content:
 
 
 def build_schedule(srcdir):
-    schd = schedule('M', '2022-08-22')
+    schd = schedule('M', '2023-08-21')
 
-    schd.add_holiday('2022-10-10', 'October Break (No labs)')
-    schd.add_holiday('2022-11-21', 'Thanksgiving (No labs)')
-
-    schd.add_content(content('lecture', 'Group A: Temp. Sensors and Computer Analysis', newtopic=True, link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Temp. Sensors and Computer Analysis', link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
+    schd.add_holiday('2022-10-09', 'October Break (No labs)')
+    schd.add_holiday('2022-11-20', 'Thanksgiving (No labs)')
     
     schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 1', newtopic=True, link=srcdir+'UVVis/uvvis_main_a.ipynb'))
     schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 2', newtopic=False, link=srcdir+'UVVis/uvvis_main_b.ipynb'))
@@ -148,6 +145,8 @@ def build_schedule(srcdir):
     schd.add_content(content('lecture', 'Group A: Joule Thomson Part 2', link=srcdir+'JouleThomson/joule_thomson_main_b.ipynb'))
     schd.add_content(content('lecture', 'Group B: Joule Thomson Part 1', link=srcdir+'JouleThomson/joule_thomson_main_a.ipynb'))
     schd.add_content(content('lecture', 'Group B: Joule Thomson Part 2', link=srcdir+'JouleThomson/joule_thomson_main_b.ipynb'))
+
+    schd.add_content(content('lecture', 'Groups A & B: Blackbody Spectrum', newtopic=True))
     
 #     schd.add_content(content('lecture', 'Freedom!'))
     return schd
