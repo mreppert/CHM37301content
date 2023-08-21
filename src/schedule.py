@@ -131,20 +131,20 @@ def build_schedule(srcdir):
     schd.add_holiday('2022-10-09', 'October Break (No labs)')
     schd.add_holiday('2022-11-20', 'Thanksgiving (No labs)')
     
-    schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 1', newtopic=True, link=srcdir+'UVVis/uvvis_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 2', newtopic=False, link=srcdir+'UVVis/uvvis_main_b.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 1', link=srcdir+'UVVis/uvvis_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 2', link=srcdir+'UVVis/uvvis_main_b.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 1', newtopic=True, link=srcdir+'UVVis/uvvis_main_1.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 2', newtopic=False, link=srcdir+'UVVis/uvvis_main_2.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 1', link=srcdir+'UVVis/uvvis_main_1.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 2', link=srcdir+'UVVis/uvvis_main_2.ipynb'))
     
-    schd.add_content(content('lecture', 'Group A: Gas Phase Kinetics Part 1', newtopic=True, link=srcdir+'Kinetics/kinetics_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group A: Gas Phase Kinetics Part 2', link=srcdir+'Kinetics/kinetics_main_b.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1', link=srcdir+'Kinetics/kinetics_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1', link=srcdir+'Kinetics/kinetics_main_b.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Gas Phase Kinetics Part 1', newtopic=True, link=srcdir+'Kinetics/kinetics_main_1.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Gas Phase Kinetics Part 2', link=srcdir+'Kinetics/kinetics_main_2.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1', link=srcdir+'Kinetics/kinetics_main_1.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1', link=srcdir+'Kinetics/kinetics_main_2.ipynb'))
     
-    schd.add_content(content('lecture', 'Group A: Joule Thomson Part 1', newtopic=True, link=srcdir+'JouleThomson/joule_thomson_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group A: Joule Thomson Part 2', link=srcdir+'JouleThomson/joule_thomson_main_b.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Joule Thomson Part 1', link=srcdir+'JouleThomson/joule_thomson_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Joule Thomson Part 2', link=srcdir+'JouleThomson/joule_thomson_main_b.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Joule Thomson Part 1', newtopic=True, link=srcdir+'JouleThomson/joule_thomson_main_1.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Joule Thomson Part 2', link=srcdir+'JouleThomson/joule_thomson_main_2.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Joule Thomson Part 1', link=srcdir+'JouleThomson/joule_thomson_main_1.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Joule Thomson Part 2', link=srcdir+'JouleThomson/joule_thomson_main_2.ipynb'))
 
     schd.add_content(content('lecture', 'Groups A & B: Blackbody Spectrum', newtopic=True))
     
