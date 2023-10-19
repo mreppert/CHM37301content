@@ -128,8 +128,8 @@ class content:
 def build_schedule(srcdir):
     schd = schedule('M', '2023-08-21')
 
-    schd.add_holiday('2022-10-09', 'October Break (No labs)')
-    schd.add_holiday('2022-11-20', 'Thanksgiving (No labs)')
+    schd.add_holiday('2023-10-09', 'October Break (No labs)')
+    schd.add_holiday('2023-11-20', 'Thanksgiving (No labs)')
     
     schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 1', newtopic=True, link=srcdir+'UVVis/uvvis_main_1.ipynb'))
     schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 2', newtopic=False, link=srcdir+'UVVis/uvvis_main_2.ipynb'))
