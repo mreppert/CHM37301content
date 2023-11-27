@@ -146,7 +146,7 @@ def build_schedule(srcdir):
     schd.add_content(content('lecture', 'Group B: Joule Thomson Part 1', link=srcdir+'JouleThomson/joule_thomson_main_1.ipynb'))
     schd.add_content(content('lecture', 'Group B: Joule Thomson Part 2', link=srcdir+'JouleThomson/joule_thomson_main_2.ipynb'))
 
-    schd.add_content(content('lecture', 'Groups A & B: Blackbody Spectrum', newtopic=True))
+    schd.add_content(content('lecture', 'Groups A & B: Blackbody Spectrum', newtopic=True, link=srcdir+'Blackbody/blackbody_main.ipynb'))
     
 #     schd.add_content(content('lecture', 'Freedom!'))
     return schd
